@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 會說話的鴿子</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="ai-page" aria-labelledby="page-title">
+    <section class="hero-card">
+      <p class="eyebrow">AI 頁面</p>
+      <div class="avatar-card" role="img" aria-label="會說話的鴿子 Avatar">
+        <div class="pigeon" aria-hidden="true">
+          <span class="wing wing-left"></span>
+          <span class="body"></span>
+          <span class="head"></span>
+          <span class="beak"></span>
+          <span class="eye"></span>
+          <span class="speech-dot dot-one"></span>
+          <span class="speech-dot dot-two"></span>
+          <span class="speech-dot dot-three"></span>
+        </div>
+        <h1 id="page-title">會說話的鴿子 Avatar</h1>
+        <p>用文字、語音、照片或文件與 AI 鴿子對話。</p>
+      </div>
+    </section>
+
+    <section class="input-panel" aria-labelledby="input-title">
+      <h2 id="input-title">輸入方式</h2>
+      <div class="input-grid">
+        <button type="button" class="input-button" data-type="文字">
+          <span class="icon">文</span>
+          <span>[文字]</span>
+        </button>
+        <button type="button" class="input-button" data-type="語音">
+          <span class="icon">🎙️</span>
+          <span>[語音]</span>
+        </button>
+        <button type="button" class="input-button" data-type="拍照">
+          <span class="icon">📷</span>
+          <span>[拍照]</span>
+        </button>
+        <button type="button" class="input-button" data-type="上傳Excel">
+          <span class="icon">表</span>
+          <span>[上傳Excel]</span>
+        </button>
+        <button type="button" class="input-button" data-type="上傳PDF">
+          <span class="icon">PDF</span>
+          <span>[上傳PDF]</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="chat-history" aria-labelledby="history-title">
+      <div class="section-heading">
+        <h2 id="history-title">聊天紀錄區</h2>
+        <span class="status-pill" id="mode-status">尚未選擇輸入方式</span>
+      </div>
+      <div class="messages" id="messages" aria-live="polite">
+        <article class="message assistant">
+          <span class="message-avatar">🕊️</span>
+          <p>你好！我是會說話的鴿子，請選擇一種輸入方式開始聊天。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
