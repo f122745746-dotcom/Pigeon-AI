@@ -1,0 +1,2 @@
+# pytest is required for the test suite.
+pytest==8.2.2
