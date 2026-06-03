@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pigeon AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell" aria-label="Pigeon AI 首頁">
+      <section class="hero-card logo-card" aria-label="Pigeon AI Logo">
+        <div class="logo-mark" aria-hidden="true">🕊️</div>
+        <div>
+          <p class="eyebrow">Pigeon AI</p>
+          <h1>Pigeon AI Logo</h1>
+        </div>
+      </section>
+
+      <section class="card weather-card" aria-labelledby="weather-title">
+        <div>
+          <p class="eyebrow">今日天氣</p>
+          <h2 id="weather-title">風速 15km</h2>
+          <p class="muted">東北風</p>
+        </div>
+        <div class="weather-icon" aria-hidden="true">🌤️</div>
+      </section>
+
+      <section class="card assistant-card" aria-labelledby="assistant-title">
+        <div>
+          <p class="eyebrow">AI智慧助手</p>
+          <h2 id="assistant-title">即時掌握鴿況與賽事</h2>
+        </div>
+        <button type="button" class="voice-button">🎤開始對話</button>
+      </section>
+
+      <section class="quick-grid" aria-label="快速功能">
+        <a href="#loft">鴿舍</a>
+        <a href="#health">健康</a>
+        <a href="#race">競翔</a>
+      </section>
+
+      <section class="info-section" aria-labelledby="announcement-title">
+        <h2 id="announcement-title">公告</h2>
+        <article class="list-card">
+          <strong>春季鴿舍巡檢提醒</strong>
+          <p>請留意濕度與通風，維持良好訓練環境。</p>
+        </article>
+      </section>
+
+      <section class="info-section" aria-labelledby="events-title">
+        <h2 id="events-title">最新賽事</h2>
+        <article class="list-card">
+          <strong>北區資格賽</strong>
+          <p>集鴿時間與放飛資訊將於賽前公告。</p>
+        </article>
+      </section>
+
+      <section class="info-section" aria-labelledby="club-title">
+        <h2 id="club-title">鴿會通知</h2>
+        <article class="list-card">
+          <strong>會員資料更新</strong>
+          <p>請於本週完成聯絡方式確認。</p>
+        </article>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="底部導覽">
+      <a class="active" href="#home" aria-current="page"><span>⌂</span>首頁</a>
+      <a href="#loft"><span>🕊️</span>鴿舍</a>
+      <a href="#ai"><span>🤖</span>AI</a>
+      <a href="#race"><span>🏁</span>競翔</a>
+      <a href="#profile"><span>👤</span>我的</a>
+    </nav>
+  </body>
+</html>
