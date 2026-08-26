@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>乾記食品｜AI智慧工廠戰情儀表板</title>
+<style>
+:root{
+  --bg:#071425; --panel:#0d2036; --panel2:#102a43; --line:#1c4766;
+  --cyan:#55ddff; --green:#5ee7a2; --orange:#ffb85c; --text:#e8f4ff; --muted:#8da9bf;
+}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,"Noto Sans TC",sans-serif}
+header{padding:24px 28px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#0a1d31,#071425)}
+h1{margin:0 0 6px;font-size:28px} .sub{color:var(--muted)}
+main{padding:24px;max-width:1400px;margin:auto}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}.label{color:var(--muted);font-size:14px}.value{font-size:30px;font-weight:700;margin-top:8px;color:var(--cyan)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:20px}.panel h2{margin:0 0 16px;font-size:19px}
+.bar{height:18px;background:#071425;border-radius:9px;overflow:hidden;margin:10px 0 16px}.fill{height:100%;border-radius:9px;background:linear-gradient(90deg,var(--cyan),var(--green))}
+.row{display:grid;grid-template-columns:180px 1fr 80px;align-items:center;gap:12px;margin:12px 0}.pct{text-align:right;color:var(--green);font-weight:700}
+table{width:100%;border-collapse:collapse}th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--muted)}
+.badge{display:inline-block;padding:5px 9px;border-radius:999px;background:#12344b;color:var(--green);font-size:12px}
+footer{padding:24px;color:var(--muted);text-align:center}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.row{grid-template-columns:120px 1fr 60px}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}.pct{text-align:left}}
+</style>
+</head>
+<body>
+<header>
+  <h1>乾記食品｜AI智慧工廠戰情儀表板</h1>
+  <div class="sub">數據驅動百年工藝｜AI × ESG × 智慧製造</div>
+</header>
+<main>
+  <section class="grid">
+    <div class="card"><div class="label">今日生產效率</div><div class="value">92.6%</div></div>
+    <div class="card"><div class="label">設備稼動率</div><div class="value">88.4%</div></div>
+    <div class="card"><div class="label">能源使用效率</div><div class="value">94.1%</div></div>
+    <div class="card"><div class="label">AI異常預警</div><div class="value">3</div></div>
+  </section>
+
+  <section class="panel">
+    <h2>生產線即時狀態</h2>
+    <div class="row"><strong>醬料充填線</strong><div class="bar"><div class="fill" style="width:94%"></div></div><div class="pct">94%</div></div>
+    <div class="row"><strong>包裝線</strong><div class="bar"><div class="fill" style="width:89%"></div></div><div class="pct">89%</div></div>
+    <div class="row"><strong>貼標線</strong><div class="bar"><div class="fill" style="width:86%"></div></div><div class="pct">86%</div></div>
+  </section>
+
+  <section class="panel">
+    <h2>AI異常偵測</h2>
+    <table><thead><tr><th>時間</th><th>設備</th><th>事件</th><th>狀態</th></tr></thead><tbody>
+      <tr><td>09:12</td><td>充填機 A-01</td><td>溫度偏高</td><td><span class="badge">監控中</span></td></tr>
+      <tr><td>08:46</td><td>封口機 B-02</td><td>封口壓力波動</td><td><span class="badge">已處理</span></td></tr>
+      <tr><td>08:21</td><td>冷藏設備 C-01</td><td>能耗異常</td><td><span class="badge">監控中</span></td></tr>
+    </tbody></table>
+  </section>
+
+  <section class="panel">
+    <h2>ESG／能源管理</h2>
+    <div class="grid">
+      <div class="card"><div class="label">今日用電</div><div class="value">1,286 kWh</div></div>
+      <div class="card"><div class="label">單位產品能耗</div><div class="value">0.82 kWh/kg</div></div>
+      <div class="card"><div class="label">碳排估算</div><div class="value">612 kgCO₂e</div></div>
+      <div class="card"><div class="label">較基準改善</div><div class="value">12.8%</div></div>
+    </div>
+  </section>
+</main>
+<footer>乾記食品有限公司｜AI智慧工廠戰情儀表板 Demo</footer>
+</body>
+</html>
